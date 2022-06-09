@@ -1,0 +1,60 @@
+{
+  "name": "blog-koa",
+  "version": "1.0.0",
+  "description": "naice new blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/app.js",
+    "start": "node start",
+    "pm2": "pm2 deploy ecosystem.json production",
+    "build": "webpack"
+  },
+  "keywords": [
+    "koa",
+    "naice",
+    "blog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naihe138/naice-blog-koa.git"
+  },
+  "author": "naice",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "@vuepress/markdown": "^1.8.0",
+    "busboy": "^0.3.1",
+    "externals-dependencies": "^1.0.4",
+    "geoip-lite": "^1.3.7",
+    "glob": "^7.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.8.1",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "^0.0.16",
+    "koa-helmet": "^5.1.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.15",
+    "markdown-it-container": "^3.0.0",
+    "mongoose": "^5.6.11",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-paginate": "^5.0.3",
+    "nodemailer": "^6.3.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "qiniu": "^7.2.2",
+    "ramda": "^0.26.1",
+    "request": "^2.88.0",
+    "xss": "^1.0.6",
+    "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
