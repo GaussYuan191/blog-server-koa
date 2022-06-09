@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "node ./src/app.js",
-    "start": "node start",
-    "pm2": "pm2 deploy ecosystem.json production",
+    "server": "node start",
+    "start": "pm2 start processes.json",
+    "stop": "pm2 stop processes.json",
     "build": "webpack"
   },
   "keywords": [
